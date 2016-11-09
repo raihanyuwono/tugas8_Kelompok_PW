@@ -11,7 +11,7 @@ nav{
 }
 
 .full-height{
-    height: 100vh;
+    height: 150vh;
 }
 .flex-center{
     align-items: center;
@@ -28,7 +28,6 @@ nav{
 }
 .home{
     background-color: #767d89;
-    background-size:cover;
 }
 .content-text{
     color: white;

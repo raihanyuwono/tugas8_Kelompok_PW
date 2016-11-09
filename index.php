@@ -8,7 +8,7 @@
 
 	</head>
 	
-	<body>
+	<body style="background-color: #767d89">
 	
 		<?php
 			session_start();
@@ -16,22 +16,20 @@
 
 		<nav id="nav">
 			<ul id="nav-wrapper">
-				<li><a href="#"><b>Home</b></a></li>
-				<li><a href="#"><b>About Us</b></a></li>
 			</ul>
 		</nav>
 
-		<div class="flex-center full-height home">
+		<div class="flex-center home" style="padding-top: 8%">
 			<div class="content">
-				<h3 class="content-text">INPUT YOUR NIM</h3>
-				<form action="server_side.php" method="POST" style="margin-bottom: 16px">
-					<input type="text" name="nim">
+				<h3 class="content-text">INPUT RELIGION</h3>
+				<form action="server_side.php" method="GET" style="margin-bottom: 16px">
+					<input type="text" name="religion">
 					<input type="submit" value="SUBMIT">
 				</form>
 
 				<?php
 					if(isset($_SESSION['data'])){
-						echo "<div class='content-text' style='text-align: left'>" . $_SESSION['data'] . "</div>";
+						echo "<div class='content-text' style='text-align: left; padding-bottom: 16px;'>" . $_SESSION['data'] . "</div>";
 						session_destroy();
 					}
 				?>
